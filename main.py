@@ -35,7 +35,7 @@ def main():
                     del contacts_list[j]
                     break
     except IndexError:
-        with open('phonebook.csv', 'w', encoding='utf-8', newline='') as f:
+        with open('phonebook_from_main.csv', 'w', encoding='utf-8', newline='') as f:
             datawriter = csv.writer(f, delimiter=',')
             datawriter.writerows(contacts_list)
 
